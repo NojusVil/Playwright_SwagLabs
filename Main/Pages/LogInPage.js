@@ -19,10 +19,11 @@ export class LogInPage {
     await this.UsernameInputField.fill(Login_Username);
     await this.PasswordInputField.fill(Login_Password);
     logger.info(
-      `Attempted login with username: ${Login_Username} and password: ${Login_Password}`
+      `Login inputs filled with username: ${Login_Username} and password: ${Login_Password}`
     );
   }
   async ClickLogIn() {
     await this.LogInButton.click();
+    logger.info("Login button clicked");
   }
 }

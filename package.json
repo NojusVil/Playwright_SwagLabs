@@ -1,0 +1,22 @@
+{
+  "name": "playwright-swag-labs-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.5.5"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.45",
+    "path": "^0.12.7",
+    "playwright": "^1.47.2",
+    "playwright-core": "^1.47.2",
+    "undici-types": "^6.19.8",
+    "winston": "^3.14.2"
+  },
+  "description": ""
+}

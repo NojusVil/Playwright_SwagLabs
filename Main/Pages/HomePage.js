@@ -10,4 +10,11 @@ export class HomePage {
     await expect(this.HomePageLogo).toBeVisible();
     logger.info("Home page verified");
   }
+  async AddProductToCart(Product_Data) {
+    const ProductAddToCart = this.page.locator(
+      `[data-test="add-to-cart-${Product_Data}"]`
+    );
+
+    await ProductAddToCart.click();
+  }
 }

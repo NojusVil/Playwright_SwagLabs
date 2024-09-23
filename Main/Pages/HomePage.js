@@ -5,6 +5,7 @@ export class HomePage {
   constructor(page) {
     this.page = page;
     this.HomePageLogo = page.getByText("Swag Labs");
+    this.ShoppingCartButton = page.locator('[data-test="shopping-cart-link"]');
   }
   async VerifyHomePage() {
     await expect(this.HomePageLogo).toBeVisible();
@@ -16,5 +17,8 @@ export class HomePage {
     );
 
     await ProductAddToCart.click();
+  }
+  async ClickCartButton() {
+    await this.ShoppingCartButton.click();
   }
 }

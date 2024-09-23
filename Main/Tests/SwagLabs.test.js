@@ -48,4 +48,24 @@ test.describe("Swag Labs Site Testing", async (page) => {
       CheckData.Postalcode
     );
   });
+  test("Sort A to Z", async ({ page }) => {
+    const Home = new HomePage(page);
+    await Home.SortProducts("az");
+    logger.info("Sorted A to Z");
+  });
+  test("Sort Z to A", async ({ page }) => {
+    const Home = new HomePage(page);
+    await Home.SortProducts("az");
+    logger.info("Sorted Z to A");
+  });
+  test("Sort Low to High", async ({ page }) => {
+    const Home = new HomePage(page);
+    await Home.SortProducts("lohi");
+    logger.info("Sorted Low to High");
+  });
+  test("Sort High to Low", async ({ page }) => {
+    const Home = new HomePage(page);
+    await Home.SortProducts("hilo");
+    logger.info("Sorted High to Low");
+  });
 });

@@ -6,6 +6,8 @@ export class HomePage {
     this.page = page;
     this.HomePageLogo = page.getByText("Swag Labs");
     this.ShoppingCartButton = page.locator('[data-test="shopping-cart-link"]');
+    this.SortingSelector = page.locator('[data-test="product-sort-container"]');
+    this.ProductContainer = page.locator('[data-test="inventory-list"] div');
   }
   async VerifyHomePage() {
     await expect(this.HomePageLogo).toBeVisible();
@@ -20,5 +22,8 @@ export class HomePage {
   }
   async ClickCartButton() {
     await this.ShoppingCartButton.click();
+  }
+  async SortProducts(order) {
+    await this.SortingSelector.selectOption(order);
   }
 }

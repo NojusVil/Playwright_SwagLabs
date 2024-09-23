@@ -51,6 +51,16 @@ Basic automation tests using playwright and javascript to test out some function
    - Fills out the needed infomation for check out form from json file.
    - Verify that the check out is sucessfull.
    - Log the results.
+   - 
+### 3.4 Test sorting functionality
+1. Use home POM.
+3. Create test that preforms these actions:
+   - Sorts the page a to z.
+   - Sorts the page z to a.
+   - Sorts the page low to high.
+   - Sorts the page high to low.
+   - Verify that the sorting is correct ( work in progress )
+   - Log the results.
      
 ## 4. How to replicate
 - copy the repository
